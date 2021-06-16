@@ -1,7 +1,23 @@
-﻿doctype html
+﻿// Wood Working Restoration Project
+// Jason Asselin
+// A woodworking site for wood restoration projects
+
+doctype html
 html
   head
-    title= title
+    include ../partials/header.pug 
     link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
   body
     block content
+    a(href= "/about") About Us  
+    br
+    a(href= "/projects") Projects and Gallery
+    br
+    a(href= "/contact") Contact Us
+    br
+    a(href= "/rrf") Request for Restore Form
+    br
+    a(href= "/") Back to Home Page
+
+    include ../partials/footer.pug  
